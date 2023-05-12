@@ -9,9 +9,9 @@ def generate_password(num_characters):
     generating_password = alphabet_lower + alphabet_upper + especial_characters + numeric_characters
 
     while True:
-        num_characters = int(input('How many characters do you want in your password (8 to 20): '))
+        num_characters = int(input('How many characters do you want in your password? (8 to 20): '))
         if num_characters < 8 or num_characters > 20:
-            print('Valor inválido, escolha um número entre 8 e 20')
+            print('Invalid value, pick a number between 8 and 20')
         else:
             break
     result = ''
@@ -23,4 +23,5 @@ def generate_password(num_characters):
 
 password = generate_password(num_characters=int)
 print(password)
+
 
